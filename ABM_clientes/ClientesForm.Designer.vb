@@ -27,13 +27,13 @@ Partial Class ClientesForm
         Me.Label3 = New System.Windows.Forms.Label
         Me.Label4 = New System.Windows.Forms.Label
         Me.Label5 = New System.Windows.Forms.Label
-        Me.Button1 = New System.Windows.Forms.Button
-        Me.Button2 = New System.Windows.Forms.Button
+        Me.Aceptar = New System.Windows.Forms.Button
+        Me.Cancelar = New System.Windows.Forms.Button
         Me.TextBox1 = New System.Windows.Forms.TextBox
         Me.TextBox2 = New System.Windows.Forms.TextBox
         Me.TextBox3 = New System.Windows.Forms.TextBox
-        Me.TextBox4 = New System.Windows.Forms.TextBox
         Me.TextBox5 = New System.Windows.Forms.TextBox
+        Me.ComboBox1 = New System.Windows.Forms.ComboBox
         Me.SuspendLayout()
         '
         'Label1
@@ -81,23 +81,23 @@ Partial Class ClientesForm
         Me.Label5.TabIndex = 4
         Me.Label5.Text = "Saldo"
         '
-        'Button1
+        'Aceptar
         '
-        Me.Button1.Location = New System.Drawing.Point(159, 344)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(92, 40)
-        Me.Button1.TabIndex = 5
-        Me.Button1.Text = "Aceptar"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.Aceptar.Location = New System.Drawing.Point(159, 344)
+        Me.Aceptar.Name = "Aceptar"
+        Me.Aceptar.Size = New System.Drawing.Size(92, 40)
+        Me.Aceptar.TabIndex = 5
+        Me.Aceptar.Text = "Aceptar"
+        Me.Aceptar.UseVisualStyleBackColor = True
         '
-        'Button2
+        'Cancelar
         '
-        Me.Button2.Location = New System.Drawing.Point(339, 344)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(99, 40)
-        Me.Button2.TabIndex = 6
-        Me.Button2.Text = "Cancelar"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.Cancelar.Location = New System.Drawing.Point(339, 344)
+        Me.Cancelar.Name = "Cancelar"
+        Me.Cancelar.Size = New System.Drawing.Size(99, 40)
+        Me.Cancelar.TabIndex = 6
+        Me.Cancelar.Text = "Cancelar"
+        Me.Cancelar.UseVisualStyleBackColor = True
         '
         'TextBox1
         '
@@ -110,7 +110,7 @@ Partial Class ClientesForm
         '
         Me.TextBox2.Location = New System.Drawing.Point(194, 104)
         Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(197, 20)
+        Me.TextBox2.Size = New System.Drawing.Size(191, 20)
         Me.TextBox2.TabIndex = 8
         '
         'TextBox3
@@ -120,32 +120,34 @@ Partial Class ClientesForm
         Me.TextBox3.Size = New System.Drawing.Size(191, 20)
         Me.TextBox3.TabIndex = 9
         '
-        'TextBox4
-        '
-        Me.TextBox4.Location = New System.Drawing.Point(194, 185)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(194, 20)
-        Me.TextBox4.TabIndex = 10
-        '
         'TextBox5
         '
-        Me.TextBox5.Location = New System.Drawing.Point(191, 249)
+        Me.TextBox5.Location = New System.Drawing.Point(192, 249)
         Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(197, 20)
+        Me.TextBox5.Size = New System.Drawing.Size(193, 20)
         Me.TextBox5.TabIndex = 11
+        '
+        'ComboBox1
+        '
+        Me.ComboBox1.FormattingEnabled = True
+        Me.ComboBox1.Items.AddRange(New Object() {"A", "B", "C", "D"})
+        Me.ComboBox1.Location = New System.Drawing.Point(196, 185)
+        Me.ComboBox1.Name = "ComboBox1"
+        Me.ComboBox1.Size = New System.Drawing.Size(188, 21)
+        Me.ComboBox1.TabIndex = 12
         '
         'ClientesForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(617, 496)
+        Me.Controls.Add(Me.ComboBox1)
         Me.Controls.Add(Me.TextBox5)
-        Me.Controls.Add(Me.TextBox4)
         Me.Controls.Add(Me.TextBox3)
         Me.Controls.Add(Me.TextBox2)
         Me.Controls.Add(Me.TextBox1)
-        Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.Cancelar)
+        Me.Controls.Add(Me.Aceptar)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label3)
@@ -162,12 +164,12 @@ Partial Class ClientesForm
     Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents Label4 As System.Windows.Forms.Label
     Friend WithEvents Label5 As System.Windows.Forms.Label
-    Friend WithEvents Button1 As System.Windows.Forms.Button
-    Friend WithEvents Button2 As System.Windows.Forms.Button
+    Friend WithEvents Aceptar As System.Windows.Forms.Button
+    Friend WithEvents Cancelar As System.Windows.Forms.Button
     Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
     Friend WithEvents TextBox2 As System.Windows.Forms.TextBox
     Friend WithEvents TextBox3 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox4 As System.Windows.Forms.TextBox
     Friend WithEvents TextBox5 As System.Windows.Forms.TextBox
+    Friend WithEvents ComboBox1 As System.Windows.Forms.ComboBox
 
 End Class
